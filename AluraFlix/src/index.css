@@ -1,0 +1,36 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  --fontSource: 'Source Sans 3, sans-serif';
+  --bg-color: rgba(3, 9, 16, 1);
+  --bg-color-grey: rgb(25, 25, 25);
+  --modal-bg-color: rgba(3, 18, 47, 0.76);
+  --grey-color: rgb(38, 38, 38);
+  --grey-color-light: rgb(165, 165, 165);
+  --blue-color: rgb(34, 113, 209);
+  --green-color: rgb(0, 200, 111);
+  --blue-color-gradient: rgba(34, 113, 209, 0.24);
+  --blue-color-gradient-scroll-bar: rgba(34, 113, 209, 0.17);
+  --white-color: rgb(245, 245, 245);
+}
+
+/*.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+*/

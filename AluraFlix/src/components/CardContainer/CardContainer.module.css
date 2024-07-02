@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 18px;
+}
+
+.cards__container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding-bottom: 30px;
+}
+
+.cards__container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cards__container::-webkit-scrollbar-thumb {
+    background: var(--blue-color);
+    border-radius: 5px;
+}
+
+.cards__container::-webkit-scrollbar-track {
+    background: var(--blue-color-gradient-scroll-bar);
+    border-radius: 5px;
+}

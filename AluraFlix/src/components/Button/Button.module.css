@@ -1,0 +1,99 @@
+.nav {
+    width: 200px;
+    height: 54px;
+    background-color: var(--blue-color-gradient);
+    border-radius: 50px;
+    border: 2px solid var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav img {
+    width: 25px;
+    height: 30px;
+}
+
+.nav p {
+    font-size: 20px;
+    color: var(--blue-color);
+}
+
+.card {
+    width: 100px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 25px;
+    height: 28px;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.guardar,
+.limpiar {
+    height: 54px;
+    width: 180px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.guardar p,
+.limpiar p {
+    font-family: var(--fontSource);
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.guardar {
+    border: 3px solid var(--blue-color);
+}
+
+.limpiar {
+    border: 3px solid var(--white-color);
+}
+
+
+.guardar-modal,
+.limpiar-modal {
+    height: 54px;
+    width: 180px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.guardar-modal p,
+.limpiar-modal p {
+    font-family: var(--fontSource);
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.guardar-modal {
+    border: 3px solid var(--white-color);
+}
+
+.limpiar-modal {
+    background-color:rgba(0, 0, 0, 0.9);
+    border: 3px solid var(--blue-color);
+    box-shadow: inset  0 0 .8em var(--blue-color)
+}
+.limpiar-modal p{
+    color: var(--blue-color);
+}

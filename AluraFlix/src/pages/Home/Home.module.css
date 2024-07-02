@@ -1,0 +1,14 @@
+.container {
+    height: 100%;
+    background: var(--bg-color-grey);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 93px;
+    padding: 28px 0;
+}

@@ -1,0 +1,35 @@
+{
+    "videos": [
+        {
+            "title": "Titulo",
+            "categorie": 1,
+            "image": "https://",
+            "link": "https://",
+            "description": "Lorem"
+        },
+        {
+            "title": "Titulo",
+            "categorie": 1,
+            "image": "https://",
+            "link": "https://",
+            "description": "Lorem"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "title": "FRONT END",
+            "color": "#6BD1FF"
+        },
+        {
+            "id": 2,
+            "title": "BACK END",
+            "color": "#00C86F"
+        },
+        {
+            "id": 3,
+            "title": "INNOVACIÓN Y GESTIÓN",
+            "color": "#FFBA05"
+        }
+    ]
+}
