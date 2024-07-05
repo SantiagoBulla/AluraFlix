@@ -20,7 +20,7 @@ const Container = styled.div`
         width: 300px;
         border: 3px solid ${props => `var(${props.$border})`};
         border-radius: 10px;
-        padding-left: 10px;
+        padding: 0;
         font-size: 20px;
         outline: none;
         font-family: var(--fontSource);
@@ -28,14 +28,24 @@ const Container = styled.div`
 
     input::placeholder{
         color: var(--grey-color-light);
+        padding-left: 15px;
+    }
+
+    @media (min-width: 820px) {
+
+        width: ${props => props.$width ? props.$width : '335px'};
+
+        input{
+            width: ${props => props.$width ? props.$width : '335px'};
+        }
     }
 
 `
 
 
-const InputField = ({ label, placeholder, border }) => {
+const InputField = ({ label, placeholder, border, width }) => {
     return (
-        <Container $border={border}>
+        <Container $border={border} $width={width}>
             <label htmlFor={`input-${label}`}>{label}</label>
             <input type='text' name="input" id={`input-${label}`} placeholder={placeholder} />
         </Container>

@@ -25,3 +25,14 @@
     background: var(--blue-color-gradient-scroll-bar);
     border-radius: 5px;
 }
+
+@media (min-width: 820px) {
+
+    .container {
+        margin: 0;
+    }
+
+    .cards__container {
+        gap: 20px;
+    }
+}

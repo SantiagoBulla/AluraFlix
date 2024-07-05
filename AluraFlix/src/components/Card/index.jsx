@@ -7,7 +7,7 @@ const Container = styled.div`
   width: 350px;
   border-radius: 22px;
   position: relative;
-  margin-right: 8px;
+  margin-right: 15px;
 
   ::before {
     content: '';

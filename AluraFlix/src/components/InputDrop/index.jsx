@@ -26,11 +26,20 @@ const Container = styled.div`
         color: var(--grey-color-light);
         outline: none;
     }
+
+    @media (min-width: 820px) {
+
+        width: ${props => props.$width ? props.$width : '335px'};
+
+        select{
+            width: ${props => props.$width ? props.$width : '335px'};
+        }
+    }
 `
 
-const InputDrop = ({ label, border }) => {
+const InputDrop = ({ label, border, width }) => {
     return (
-        <Container $border={border}>
+        <Container $border={border} $width={width}>
             <label htmlFor={`input-${label}`}>{label}</label>
             <select name="input" id={`input-${label}`}>
                 <option value="value1"> Value 1</option>

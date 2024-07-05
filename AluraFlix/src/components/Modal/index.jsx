@@ -37,13 +37,13 @@ const ModalZoom = () => {
                         </button>
                     </div>
                     <div className={styles.title}>
-                        <h1>EDITAR CARD</h1>
+                        <h1>EDITAR CARD:</h1>
                     </div>
-                    <InputField border={'--blue-color'} label={'Título'} placeholder={'¿Qué es javascript?'} />
-                    <InputDrop border={'--blue-color'} label={'Categoria'} placeholder={'Categoria'} />
-                    <InputField border={'--blue-color'} label={'Imagen'} placeholder={'https://www.google.com/url?...'} />
-                    <InputField border={'--blue-color'} label={'Video'} placeholder={'https://www.youtube.com/url?...'} />
-                    <InputText border={'--blue-color'} label={'Descripción'} placeholder={'Este video es una recopilazación...'} />
+                    <InputField width={'100%'} border={'--blue-color'} label={'Título'} placeholder={'¿Qué es javascript?'} />
+                    <InputDrop width={'100%'} border={'--blue-color'} label={'Categoria'} placeholder={'Categoria'} />
+                    <InputField width={'100%'} border={'--blue-color'} label={'Imagen'} placeholder={'https://www.google.com/url?...'} />
+                    <InputField width={'100%'} border={'--blue-color'} label={'Video'} placeholder={'https://www.youtube.com/url?...'} />
+                    <InputText width={'100%'} height={'180px'} border={'--blue-color'} label={'Descripción'} placeholder={'Este video es una recopilazación...'} />
                     <div className={styles.buttons}>
                         <Button text={'GUARDAR'} style={'limpiar-modal'} />
                         <Button text={'LIMPIAR'} style={'guardar-modal'} />

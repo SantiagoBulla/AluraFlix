@@ -45,11 +45,23 @@ const Container = styled.div`
         background: var(--grey-color);
         border-radius: 5px;
     }
+
+    @media (min-width: 820px) {
+
+        width: 100%;
+        height: ${props => props.$height ? props.$height : '250px'};
+
+        textarea{
+            align-self: start;
+            width: ${props => props.$width ? props.$width : '450px'};
+            height: ${props => props.$height ? props.$height : '200px'};
+        }
+    }
 `
 
-const InputText = ({ label, placeholder, border }) => {
+const InputText = ({ label, placeholder, border, width, height }) => {
     return (
-        <Container $border={border}>
+        <Container $border={border} $width={width} $height={height}>
             <label htmlFor={`input-${label}`}>{label}</label>
             <textarea type='text' name="input" id={`input-${label}`} placeholder={placeholder} />
         </Container>

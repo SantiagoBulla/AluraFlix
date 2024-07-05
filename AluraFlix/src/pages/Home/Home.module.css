@@ -12,3 +12,13 @@
     gap: 93px;
     padding: 28px 0;
 }
+
+@media (min-width: 820px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .main{
+        padding: 80px 30px;
+    }
+}

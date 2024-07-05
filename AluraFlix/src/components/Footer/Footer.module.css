@@ -1,0 +1,22 @@
+.footer {
+    display: none;
+    width: 99%;
+    height: 125px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 820px) {
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 4px solid var(--blue-color);
+    }
+
+    .footer img {
+        width: 168px;
+        height: 40px;
+    }
+}

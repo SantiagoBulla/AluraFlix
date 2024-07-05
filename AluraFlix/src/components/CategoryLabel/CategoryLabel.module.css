@@ -10,3 +10,9 @@
     border-radius: 15px;
     text-align: center;
 }
+
+@media (min-width: 820px) {
+ .container{
+    align-self: center;
+ }   
+}
