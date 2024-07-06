@@ -12,7 +12,14 @@
 }
 
 @media (min-width: 820px) {
- .container{
-    align-self: center;
- }   
+    .container {
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        align-self: flex-start;
+    }
 }

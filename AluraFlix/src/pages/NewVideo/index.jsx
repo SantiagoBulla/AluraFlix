@@ -22,15 +22,17 @@ const NewVideo = () => {
                             <h2>Crear tarjeta</h2>
                             <hr />
                         </div>
-                        <div className={styles.divider}>
-                            <InputField border={'--grey-color'} label={'Título'} placeholder={'Título del video'} />
-                            <InputDrop border={'--grey-color'} label={'Categoria'} placeholder={'Categoria'} />
+                        <div className={styles.divider__1}>
+                            <InputField error={''} border={'--grey-color'} label={'Título'} placeholder={'Título del video'} />
+                            <InputDrop error={''} border={'--grey-color'} label={'Categoria'} placeholder={'Categoria'} />
                         </div>
                         <div className={styles.divider}>
-                            <InputField border={'--grey-color'} label={'Imagen'} placeholder={'Link de la imagen'} />
-                            <InputField border={'--grey-color'} label={'Video'} placeholder={'Link del video'} />
+                            <InputField error={''} border={'--grey-color'} label={'Imagen'} placeholder={'Link de la imagen'} />
+                            <InputField error={''} border={'--grey-color'} label={'Video'} placeholder={'Link del video'} />
                         </div>
-                        <InputText border={'--grey-color'} label={'Descripción'} placeholder={'¿De qué se trata este vídeo?'} />
+                        <div className={styles.divider}>
+                            <InputText error={''} border={'--grey-color'} label={'Descripción'} placeholder={'¿De qué se trata este vídeo?'} />
+                        </div>
                         <div className={styles.buttons}>
                             <Button text={'Guardar'} style={'limpiar'} />
                             <Button text={'Limpiar'} style={'guardar'} />

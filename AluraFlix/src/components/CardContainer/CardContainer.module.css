@@ -36,3 +36,10 @@
         gap: 20px;
     }
 }
+
+
+@media (min-width: 1200px) {
+    .cards__container {
+        gap: 25px;
+    }
+}

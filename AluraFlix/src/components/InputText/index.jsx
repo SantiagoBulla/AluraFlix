@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     height: 201px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,14 +12,14 @@ const Container = styled.div`
         font-family: var(--fontSource);
         font-size: 20px;
         font-weight: 600;
-        color: var(--white-color);
+        color: ${props => props.$error ? `var(${props.$error})` : 'var(--white-color)'};
     }
 
     textarea {
         background: transparent;
         height: 155px;
-        width: 300px;
-        border: 3px solid ${props => `var(${props.$border})`};
+        width: 97%;
+        border: 3px solid ${props => props.$error ? `var(${props.$error})` : `var(${props.$border})`};
         border-radius: 10px;
         padding: 10px 0 10px 10px;
         color: var(--grey-color-light);
@@ -27,7 +28,7 @@ const Container = styled.div`
     }
 
     textarea::placeholder {
-        color: var(--grey-color-light);
+        color: ${props => props.$error ? `var(${props.$error})` : 'var(--grey-color-light)'};
     }
 
 
@@ -47,23 +48,21 @@ const Container = styled.div`
     }
 
     @media (min-width: 820px) {
-
-        width: 100%;
+        width: 60%;
         height: ${props => props.$height ? props.$height : '250px'};
 
         textarea{
             align-self: start;
-            width: ${props => props.$width ? props.$width : '450px'};
             height: ${props => props.$height ? props.$height : '200px'};
         }
     }
 `
 
-const InputText = ({ label, placeholder, border, width, height }) => {
+const InputText = ({ label, placeholder, border, height, error }) => {
     return (
-        <Container $border={border} $width={width} $height={height}>
+        <Container $border={border} $height={height} $error={error}>
             <label htmlFor={`input-${label}`}>{label}</label>
-            <textarea type='text' name="input" id={`input-${label}`} placeholder={placeholder} />
+            <textarea type='text' name="input" id={`input-${label}`} placeholder={placeholder} required/>
         </Container>
     )
 }

@@ -58,4 +58,38 @@
         font-size: 16px;
         font-weight: 300;
     }
+
+    .video{
+        height: 95%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        height: 650px;
+    }
+
+    .wrapper__text{
+        height: 100%;
+        width: 65%;
+    }
+
+    .information h4 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .information p {
+        font-size: 28px;
+        font-weight: 300;
+    }
+    
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 100%;
+    }
 }

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     height: 108px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
@@ -11,14 +12,14 @@ const Container = styled.div`
         font-family: var(--fontSource);
         font-size: 20px;
         font-weight: 600;
-        color: var(--white-color);
+        color: ${props => props.$error ? `var(${props.$error})` : 'var(--white-color)'};
     }
 
     input{
         background: transparent;
         height: 62px;
-        width: 300px;
-        border: 3px solid ${props => `var(${props.$border})`};
+        width: 100%;
+        border: 3px solid ${props => props.$error ? `var(${props.$error})` : `var(${props.$border})`};
         border-radius: 10px;
         padding: 0;
         font-size: 20px;
@@ -27,27 +28,17 @@ const Container = styled.div`
     }
 
     input::placeholder{
-        color: var(--grey-color-light);
+        color: ${props => props.$error ? `var(${props.$error})` : 'var(--grey-color-light)'};
         padding-left: 15px;
     }
-
-    @media (min-width: 820px) {
-
-        width: ${props => props.$width ? props.$width : '335px'};
-
-        input{
-            width: ${props => props.$width ? props.$width : '335px'};
-        }
-    }
-
 `
 
 
-const InputField = ({ label, placeholder, border, width }) => {
+const InputField = ({ label, placeholder, border, error }) => {
     return (
-        <Container $border={border} $width={width}>
+        <Container $border={border} $error={error}>
             <label htmlFor={`input-${label}`}>{label}</label>
-            <input type='text' name="input" id={`input-${label}`} placeholder={placeholder} />
+            <input type='text' name="input" id={`input-${label}`} placeholder={placeholder} required/>
         </Container>
     )
 }

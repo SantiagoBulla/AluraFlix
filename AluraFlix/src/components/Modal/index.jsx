@@ -15,7 +15,7 @@ const Overlay = styled.div`
 `
 const DialogEstilizado = styled.dialog`
     position: absolute;
-    top: 360px;
+    top: 300px;
     background: transparent;
     padding: 0;
     border: 5px solid #6BD1FF;
@@ -23,6 +23,12 @@ const DialogEstilizado = styled.dialog`
     border-radius: 15px ;
     display: flex;
     justify-content: center;
+    background-color: var(--modal-blue-color);
+
+    @media (min-width: 1200px) {
+        top: 650px;
+        width: 70%;
+    }
 `
 const ModalZoom = () => {
 
@@ -39,11 +45,11 @@ const ModalZoom = () => {
                     <div className={styles.title}>
                         <h1>EDITAR CARD:</h1>
                     </div>
-                    <InputField width={'100%'} border={'--blue-color'} label={'Título'} placeholder={'¿Qué es javascript?'} />
-                    <InputDrop width={'100%'} border={'--blue-color'} label={'Categoria'} placeholder={'Categoria'} />
-                    <InputField width={'100%'} border={'--blue-color'} label={'Imagen'} placeholder={'https://www.google.com/url?...'} />
-                    <InputField width={'100%'} border={'--blue-color'} label={'Video'} placeholder={'https://www.youtube.com/url?...'} />
-                    <InputText width={'100%'} height={'180px'} border={'--blue-color'} label={'Descripción'} placeholder={'Este video es una recopilazación...'} />
+                    <InputField border={'--blue-color'} label={'Título'} placeholder={'¿Qué es javascript?'} />
+                    <InputDrop border={'--blue-color'} label={'Categoria'} placeholder={'Categoria'} />
+                    <InputField border={'--blue-color'} label={'Imagen'} placeholder={'https://www.google.com/url?...'} />
+                    <InputField border={'--blue-color'} label={'Video'} placeholder={'https://www.youtube.com/url?...'} />
+                    <InputText height={'180px'} border={'--blue-color'} label={'Descripción'} placeholder={'Este video es una recopilazación...'} />
                     <div className={styles.buttons}>
                         <Button text={'GUARDAR'} style={'limpiar-modal'} />
                         <Button text={'LIMPIAR'} style={'guardar-modal'} />

@@ -19,6 +19,11 @@ const Video = styled.iframe`
     height: 90%;
     border: 5px solid ${props => props.$color};    
     box-shadow: 0 0 .5em ${props => props.$color};
+    
+    @media (min-width: 1200px) {
+        height: 90%;
+        width: 90%;
+    }
 `
 
 const Banner = ({ image, video, color }) => {
@@ -33,11 +38,14 @@ const Banner = ({ image, video, color }) => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum temporibus tenetur voluptatum repudiandae sequi. Enim quisquam repellendus perferendis sequi perspiciatis eligendi, architecto minus quasi. Enim quisquam repellendus perferendis sequi perspiciatis eligendi, architecto minus quasi.</p>
                     </div>
                 </div>
-                <Video
-                    $color={color}
-                    src={video}
-                    title='video'
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></Video>
+                <div className={styles.video}>
+                    <Video
+                        $color={color}
+                        src={video}
+                        title='video'
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+                    </Video>
+                </div>
             </div>
         </div>
     )

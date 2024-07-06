@@ -44,7 +44,7 @@
 
 .subtitle {
     height: 91px;
-    width: 330px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,7 +52,7 @@
 }
 
 .subtitle hr {
-    width: 330px;
+    width: 100%;
     border: none;
     border-top: 3px solid var(--grey-color);
 }
@@ -64,10 +64,12 @@
     font-weight: 600;
 }
 
-.divider {
+.divider,
+.divider__1 {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 85%;
 }
 
 .buttons {
@@ -93,7 +95,8 @@
         width: 100%;
     }
 
-    .divider {
+    .divider,
+    .divider__1 {
         width: 100%;
         flex-direction: row;
     }
@@ -102,5 +105,12 @@
         width: 100%;
         flex-direction: row;
         margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .divider__1 {
+        width: 80%;
+        align-self: flex-start;
     }
 }
