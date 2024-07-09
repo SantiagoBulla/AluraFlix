@@ -26,23 +26,23 @@ const Video = styled.iframe`
     }
 `
 
-const Banner = ({ image, video, color }) => {
+const Banner = ({ selectedVideo }) => {
     return (
         <div className={styles.container}>
-            <Container $image={image} />
+            <Container $image={selectedVideo.image} />
             <div className={styles.card}>
                 <div className={styles.wrapper__text}>
-                    <CategoryLabel color={color} name={'FRONT END'} />
+                    <CategoryLabel color={selectedVideo.color} name={selectedVideo.category} />
                     <div className={styles.information}>
-                        <h4>Titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum temporibus tenetur voluptatum repudiandae sequi. Enim quisquam repellendus perferendis sequi perspiciatis eligendi, architecto minus quasi. Enim quisquam repellendus perferendis sequi perspiciatis eligendi, architecto minus quasi.</p>
+                        <h4>{selectedVideo.title}</h4>
+                        <p>{selectedVideo.description}</p>
                     </div>
                 </div>
                 <div className={styles.video}>
                     <Video
-                        $color={color}
-                        src={video}
-                        title='video'
+                        $color={selectedVideo.color}
+                        src={selectedVideo.link}
+                        title={selectedVideo.title}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
                     </Video>
                 </div>
