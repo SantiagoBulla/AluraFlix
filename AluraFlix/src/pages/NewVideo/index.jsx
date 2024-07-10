@@ -31,10 +31,14 @@ const NewVideo = () => {
         description: ''
     })
 
-    const getData = async () => {
+    const insertData = async (data) => {
+        await fetch("http://localhost:3000/videos", {
+            method: 'POST',
+            body: JSON.stringify({ ...data, id: uuidv4() }),
+        });
         const response = await fetch('http://localhost:3000/videos');
-        const data = await response.json();
-        return data
+        const videos = await response.json();
+        return videos
     }
 
     const validateFields = (data) => {
@@ -99,12 +103,9 @@ const NewVideo = () => {
         }
 
         if (validateFields(data)) {
-            await fetch("http://localhost:3000/videos", {
-                method: 'POST',
-                body: JSON.stringify({ ...data, id: uuidv4() }),
-            });
-            const videos = await getData()
+            const videos = await insertData(data)
             dispatch({ type: 'UPDATE_VIDEOS', payload: videos })
+            swal("GENIAL!", "¡Registro exitoso!", "success");
             navigate('/');
         }
     }
@@ -149,8 +150,8 @@ const NewVideo = () => {
                                     <InputText value={description.current.value} ref={description} error={errors.description} border={'--grey-color'} label={'Descripción'} placeholder={'¿De qué se trata este vídeo?'} />
                                 </div>
                                 <div className={styles.buttons}>
-                                    <Button text={'Guardar'} style={'limpiar'} navigation={handleSubmit} />
-                                    <Button text={'Limpiar'} style={'guardar'} navigation={cleanFields} />
+                                    <Button text={'Guardar'} style={'limpiar'} onClickAction={handleSubmit} />
+                                    <Button text={'Limpiar'} style={'guardar'} onClickAction={cleanFields} />
                                 </div>
                             </form>
                         </main>

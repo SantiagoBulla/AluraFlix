@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { GlobalContext } from '../../context/MainContext.jsx';
-import { forwardRef, useContext, useState } from 'react';
+import { forwardRef, useContext, useEffect, useState } from 'react';
 
 const Container = styled.div`
 
@@ -23,6 +23,7 @@ const Container = styled.div`
         background: transparent;
         height: 62px;
         width: 100%;
+        width: ${props => props.$modal ? '97%' : '100%'};
         border: 3px solid ${props => props.$error ? `var(${props.$error})` : `var(${props.$border})`};
         border-radius: 10px;
         padding-left: 10px;
@@ -42,11 +43,17 @@ const InputDrop = forwardRef((props, ref) => {
         setLabelOption(true);
     }
 
+    useEffect(() => {
+        if (props.data != undefined) {
+            ref.current.options[props.data + 1].selected = true;
+        }
+    }, [])
+
     return (
-        <Container $border={props.border} $error={props.error}>
+        <Container $border={props.border} $error={props.error} $modal={state.openModal}>
             <label htmlFor={`input-${props.label}`}>{props.label}</label>
             <select ref={ref} name="input" id={`input-${props.label}`} onChangeCapture={!labelOption ? disabledOption : null}>
-                <option value={-1}>SELECCIONE UNA CATEGORIA</option>
+                <option defaultValue={-1}>SELECCIONE UNA CATEGORIA</option>
                 {state.categories.map(category => {
                     return <option key={category.id} value={category.id}>{category.title}</option>
                 })}

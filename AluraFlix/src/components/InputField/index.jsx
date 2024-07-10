@@ -19,14 +19,14 @@ const Container = styled.div`
     input{
         background: transparent;
         height: 62px;
-        width: 100%;
+        width: 95%;
         border: 3px solid ${props => props.$error ? `var(${props.$error})` : `var(${props.$border})`};
         border-radius: 10px;
         padding: 0;
         font-size: 20px;
         outline: none;
         font-family: var(--fontSource);
-        padding-left: 15px;
+        padding-left: 10px;
     }
 
     input::placeholder{
@@ -39,7 +39,7 @@ const InputField = forwardRef((props, ref) => {
     return (
         <Container $border={props.border} $error={props.error}>
             <label htmlFor={`input-${props.label}`}>{props.label}</label>
-            <input ref={ref} type='text' name="input" id={`input-${props.label}`} placeholder={props.placeholder} required />
+            <input defaultValue={props.data && props.data} ref={ref} type='text' name="input" id={`input-${props.label}`} placeholder={props.placeholder}/>
         </Container>
     )
 })

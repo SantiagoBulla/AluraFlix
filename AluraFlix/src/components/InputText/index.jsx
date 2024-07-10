@@ -19,7 +19,7 @@ const Container = styled.div`
     textarea {
         background: transparent;
         height: 155px;
-        width: 97%;
+        width: 95%;
         border: 3px solid ${props => props.$error ? `var(${props.$error})` : `var(${props.$border})`};
         border-radius: 10px;
         padding: 10px 0 10px 10px;
@@ -49,7 +49,7 @@ const Container = styled.div`
     }
 
     @media (min-width: 820px) {
-        width: 60%;
+        width: ${props => props.$width ? props.$width : '60%'};
         height: ${props => props.$height ? props.$height : '250px'};
 
         textarea{
@@ -59,11 +59,11 @@ const Container = styled.div`
     }
 `
 
-const InputText = forwardRef(( props, ref ) => {
+const InputText = forwardRef((props, ref) => {
     return (
-        <Container $border={props.border} $height={props.height} $error={props.error}>
+        <Container $border={props.border} $height={props.height} $error={props.error} $width={props.width}>
             <label htmlFor={`input-${props.label}`}>{props.label}</label>
-            <textarea ref={ref} type='text' name="input" id={`input-${props.label}`} placeholder={props.placeholder} required />
+            <textarea defaultValue={props.data && props.data} ref={ref} type='text' name="input" id={`input-${props.label}`} placeholder={props.placeholder} required />
         </Container>
     )
 })

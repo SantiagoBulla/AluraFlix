@@ -48,8 +48,8 @@ const Header = () => {
                 <div className={styles.container__header}>
                     <img src="/img/logo-svg.svg" alt="logo" />
                     <div className={styles.buttons}>
-                        <Button text={'HOME'} style={actualNav ? 'limpiar-modal' : 'guardar-modal'} navigation={() => navigate('/')} />
-                        <Button text={'NUEVO VIDEO'} style={actualNav ? 'guardar-modal' : 'limpiar-modal'} navigation={() => navigate('/new-video')} />
+                        <Button text={'HOME'} style={actualNav ? 'limpiar-modal' : 'guardar-modal'} onClickAction={() => navigate('/')} />
+                        <Button text={'NUEVO VIDEO'} style={actualNav ? 'guardar-modal' : 'limpiar-modal'} onClickAction={() => navigate('/new-video')} />
                     </div>
                 </div>
             </header>

@@ -25,12 +25,13 @@ const Home = () => {
                 const videos = state.videos.filter(video => {
                   return category.id == video.category
                 });
-                return <CardContainer category={category} videos={videos.reverse()} key={category.id} />
+                return videos.length > 0 && <CardContainer category={category} videos={videos.reverse()} key={category.id} />
               })}
             </main>
-          </>}
+          </>
+        }
         <Footer />
-        {/* <Modal /> */}
+        {state.openModal && <Modal />}
       </div>
     </>
   )

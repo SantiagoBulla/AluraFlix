@@ -5,7 +5,9 @@ export const GlobalContext = createContext(); // crear el contexto
 const initialState = {
     videos: [],
     categories: [],
-    selectedVideo: {}
+    selectedVideo: {},
+    editedVideo: {},
+    openModal: false
 }
 
 const reducers = (state, action) => {
@@ -22,6 +24,26 @@ const reducers = (state, action) => {
             }
         case 'SET_SELECTED_VIDEO':
             return { ...state, selectedVideo: { ...action.payload, color: state.categories[action.payload.category].color, category: state.categories[action.payload.category].title } }
+        case 'MODAL_STATE':
+            let actualSelectedVideo = state.selectedVideo;
+            if (state.selectedVideo.id === action.payload.id) {
+                actualSelectedVideo = {
+                    ...action.payload,
+                    color: state.categories[action.payload.category].color,
+                    category: state.categories[action.payload.category].title
+                }
+            }
+            return { ...state, openModal: !state.openModal, selectedVideo: actualSelectedVideo, editedVideo: { ...action.payload } }
+        case 'DELETE_VIDEO':
+            let bannerVideo = state.selectedVideo;
+            if (state.selectedVideo.id == action.payload) {
+                bannerVideo = {
+                    ...state.videos[0],
+                    color: state.categories[state.videos[0].category].color,
+                    category: state.categories[state.videos[0].category].title
+                }
+            }
+            return { ...state, selectedVideo: bannerVideo }
         default:
             return state;
     }
