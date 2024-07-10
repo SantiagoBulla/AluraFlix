@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -25,22 +26,22 @@ const Container = styled.div`
         font-size: 20px;
         outline: none;
         font-family: var(--fontSource);
+        padding-left: 15px;
     }
 
     input::placeholder{
         color: ${props => props.$error ? `var(${props.$error})` : 'var(--grey-color-light)'};
-        padding-left: 15px;
     }
 `
 
 
-const InputField = ({ label, placeholder, border, error }) => {
+const InputField = forwardRef((props, ref) => {
     return (
-        <Container $border={border} $error={error}>
-            <label htmlFor={`input-${label}`}>{label}</label>
-            <input type='text' name="input" id={`input-${label}`} placeholder={placeholder} required/>
+        <Container $border={props.border} $error={props.error}>
+            <label htmlFor={`input-${props.label}`}>{props.label}</label>
+            <input ref={ref} type='text' name="input" id={`input-${props.label}`} placeholder={props.placeholder} required />
         </Container>
     )
-}
+})
 
 export default InputField

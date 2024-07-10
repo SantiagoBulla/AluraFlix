@@ -1,12 +1,12 @@
-import CardContainer from '../../components/CardContainer';
-import NavBarMobile from '../../components/Header'
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
-import Modal from '../../components/Modal'
-import styles from './Home.module.css';
-import Banner from '../../components/Banner';
 import { useContext } from 'react';
 import { GlobalContext } from '../../context/MainContext.jsx';
+import CardContainer from '../../components/CardContainer';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import Banner from '../../components/Banner';
+import Loading from '../../components/Loading';
+import Modal from '../../components/Modal'
+import styles from './Home.module.css';
 
 const Home = () => {
 
@@ -17,15 +17,15 @@ const Home = () => {
       <div className={styles.container}>
         <Header />
         {state.categories.length == 0 ?
-          <h1>Cargando...</h1> :
+          <Loading /> :
           <>
             <Banner selectedVideo={state.selectedVideo} />
             <main className={styles.main}>
               {state.categories.map(category => {
                 const videos = state.videos.filter(video => {
-                  return category.id == video.categorie
+                  return category.id == video.category
                 });
-                return <CardContainer category={category} videos={videos} key={category.id} />
+                return <CardContainer category={category} videos={videos.reverse()} key={category.id} />
               })}
             </main>
           </>}

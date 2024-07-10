@@ -1,117 +1,117 @@
 {
-    "videos": [
-        {
-            "id": 1,
-            "title": "How To Improve Your Sleep | Matthew Walker",
-            "categorie": 0,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiDBPfXC5X72m1Fs_dvxtulN3wTNJu5FcWw&s",
-            "link": "https://www.youtube.com/embed/lRp5AC9W_F8",
-            "description": "Sleep is one of the most important aspects of our life, health and longevity and yet it is increasingly neglected in twenty-first-century society, with devastating consequences: every major disease in the developed world - Alzheimer's, cancer, obesity, diabetes - has very strong causal links to deficient sleep."
-        },
-        {
-            "id": 2,
-            "title": "Do not memorize vocabulary. Do this instead",
-            "categorie": 0,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6pZ_qtMGcPvL5-blHzmKotKgKeJZnXASSA&s",
-            "link": "https://www.youtube.com/embed/ABeuPVden1Q",
-            "description": "In this video I discuss some common misconceptions about language and vocabulary acquisition and share my strategy for learning vocabulary in a new language."
-        },
-        {
-            "id": 3,
-            "title": "BUSINESS ENGLISH VOCABULARY You Might Hear at WORK",
-            "categorie": 0,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO054TgIQM_pbzyeSHIfZsRwD9fuHYZh8R7w&s",
-            "link": "https://www.youtube.com/embed/HTd4gZFqjU8",
-            "description": "In this episode, Thiago teaches common phrases and vocabulary used in English-speaking work environments. He covers phrases such as 'synergy', 'get some new eyes on', 'move the needle', 'unpack', 'ping me', 'circle back', 'drill down', 'elevator pitch', 'game changer', 'leverage', 'touch base', 'value proposition', and 'win-win situation'. Thiago emphasizes the importance of using these phrases tastefully and not overusing jargon in communication."
-        },
-        {
-            "id": 4,
-            "title": "Why being bilingual is good for your brain | BBC Ideas",
-            "categorie": 0,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6tjJ7IiuSJWaTko5f4BX4j2M4SQIQKtYyA&s",
-            "link": "https://www.youtube.com/embed/nzHY-muy2Mw",
-            "description": "Do you have a curious mind? You are in the right place. Our aim on BBC Ideas is to feed your curiosity, to open your mind to new perspectives, and to leave you that little bit smarter.  "
-        },
-        {
-            "id": 5,
-            "title": "5 Awesome Flutter Packages you should Know",
-            "categorie": 1,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPlvE64cXqtBppSSmymoik6lctryhv6RU1Gw&s",
-            "link": "https://www.youtube.com/embed/FMpRThUJ990",
-            "description": "This video is about five awesome flutter packages that will help you in your next flutter project and app development."
-        },
-        {
-            "id": 6,
-            "title": "The Importance of Specialization in Coding",
-            "categorie": 1,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZatGFLlYaCtxHedeksyxN7z_aQoXvcEqwCA&s",
-            "link": "https://www.youtube.com/embed/ImSjJwzqAss",
-            "description": "Many people want to learn everything, which is impossible. Pick a tech stack and learn as much as you can about that group of technologies. It will make you more valuable than being a jack of all trades."
-        },
-        {
-            "id": 7,
-            "title": "9 Reasons People Hate JavaScript",
-            "categorie": 1,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAg2n68y5tSKqRK_tw4ioZHQGT7zi1Piutng&s",
-            "link": "https://www.youtube.com/embed/J-graiyPhpw",
-            "description": "Why does everyone HATE JavaScript? We expose its flaws, quirks, and why it's still the king of the web!"
-        },
-        {
-            "id": 8,
-            "title": "Roadmap for Learning SQL",
-            "categorie": 1,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQW7buK37ELOh52nKLUYmacUMKKDLglEYEyw&s",
-            "link": "https://www.youtube.com/embed/yMqldbY2AAg",
-            "description": "A full explanation of how to become a sql developer in 2024, following standardized  frameworks and the most recent practices incorporated by the more influences companies."
-        },
-        {
-            "id": 9,
-            "title": "Scale for Beginners. Start Here.",
-            "categorie": 2,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-6vE2Yk3-RSQihgDeJbc4jMVM-MJzS591g&s",
-            "link": "https://www.youtube.com/embed/i4zGDoRvn5o",
-            "description": "The C Major Scale in Open Position is a terrific first scale on the guitar! It helps you develop finger dexterity and pick control and is a useful tool for improvising!"
-        },
-        {
-            "id": 10,
-            "title": "Red Hot Chili Peppers 'Californication' Guitar Lesson",
-            "categorie": 2,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4MSM1VzNlbd38PW3urupdNfVs6hlNmugMMQ&s",
-            "link": "https://www.youtube.com/embed/ryGJpnT98-E",
-            "description": "The C Major Scale in Open Position is a terrific first scale on the guitar! It helps you develop finger dexterity and pick control and is a useful tool for improvising!"
-        },
-        {
-            "id": 11,
-            "title": "Get FASTER Fingers In 1 WEEK - #1 Finger Exercise for Guitar",
-            "categorie": 2,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHqZg-FZZF_0KhHMzB__bgtUnb0WOIVi6EyA&s",
-            "link": "https://www.youtube.com/embed/sf-RI1YPvqY",
-            "description": "When it comes to finger exercises for guitar, most people think of the typical spider exercise, but I'm going to show you a SPECIAL exercise that focus on the real problems - your tendons and tension. I GUARANTEE that if you do this exercise for only 1 week, you will see much faster chord changes and scales. But you do not want to overdo this exercise. A little goes a long way."
-        },
-        {
-            "id": 12,
-            "title": "CHOPIN - NOCTURNO OP.9 NO.2 (PIANO TUTORIAL LECCION) (COMPLETA)",
-            "categorie": 2,
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBL6Und6NCzwRpYDdFGpEaNegybtymb9iSA&s",
-            "link": "https://www.youtube.com/embed/TUIZycSwY9Q",
-            "description": "Lección de piano paso a paso completa sobre cómo tocar Nocturno Op 9 No 2 en mi bemol mayor de Federico Chopin. (Guía completa - Tutorial de práctica de piano con ejercicios de velocidad y precisión) - Todas las partes gratis"
-        }
-    ],
-    "categories": [
-        {
-            "id": 0,
-            "title": "LANGUAGES",
-            "color": "#6BD1FF"
-        },
-        {
-            "id": 1,
-            "title": "SOFTWARE DEVELOPMENT",
-            "color": "#00C86F"
-        },
-        {
-            "id": 2,
-            "title": "MUSIC",
-            "color": "#B160C5  "
-        }
-    ]
+  "videos": [
+    {
+      "id": 1,
+      "title": "How To Improve Your Sleep | Matthew Walker",
+      "category": 0,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiDBPfXC5X72m1Fs_dvxtulN3wTNJu5FcWw&s",
+      "link": "https://www.youtube.com/embed/lRp5AC9W_F8",
+      "description": "Sleep is one of the most important aspects of our life, health and longevity and yet it is increasingly neglected in twenty-first-century society, with devastating consequences: every major disease in the developed world - Alzheimer's, cancer, obesity, diabetes - has very strong causal links to deficient sleep."
+    },
+    {
+      "id": 2,
+      "title": "Do not memorize vocabulary. Do this instead",
+      "category": 0,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6pZ_qtMGcPvL5-blHzmKotKgKeJZnXASSA&s",
+      "link": "https://www.youtube.com/embed/ABeuPVden1Q",
+      "description": "In this video I discuss some common misconceptions about language and vocabulary acquisition and share my strategy for learning vocabulary in a new language."
+    },
+    {
+      "id": 3,
+      "title": "BUSINESS ENGLISH VOCABULARY You Might Hear at WORK",
+      "category": 0,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO054TgIQM_pbzyeSHIfZsRwD9fuHYZh8R7w&s",
+      "link": "https://www.youtube.com/embed/HTd4gZFqjU8",
+      "description": "In this episode, Thiago teaches common phrases and vocabulary used in English-speaking work environments. He covers phrases such as 'synergy', 'get some new eyes on', 'move the needle', 'unpack', 'ping me', 'circle back', 'drill down', 'elevator pitch', 'game changer', 'leverage', 'touch base', 'value proposition', and 'win-win situation'. Thiago emphasizes the importance of using these phrases tastefully and not overusing jargon in communication."
+    },
+    {
+      "id": 4,
+      "title": "Why being bilingual is good for your brain | BBC Ideas",
+      "category": 0,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6tjJ7IiuSJWaTko5f4BX4j2M4SQIQKtYyA&s",
+      "link": "https://www.youtube.com/embed/nzHY-muy2Mw",
+      "description": "Do you have a curious mind? You are in the right place. Our aim on BBC Ideas is to feed your curiosity, to open your mind to new perspectives, and to leave you that little bit smarter.  "
+    },
+    {
+      "id": 5,
+      "title": "5 Awesome Flutter Packages you should Know",
+      "category": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPlvE64cXqtBppSSmymoik6lctryhv6RU1Gw&s",
+      "link": "https://www.youtube.com/embed/FMpRThUJ990",
+      "description": "This video is about five awesome flutter packages that will help you in your next flutter project and app development."
+    },
+    {
+      "id": 6,
+      "title": "The Importance of Specialization in Coding",
+      "category": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZatGFLlYaCtxHedeksyxN7z_aQoXvcEqwCA&s",
+      "link": "https://www.youtube.com/embed/ImSjJwzqAss",
+      "description": "Many people want to learn everything, which is impossible. Pick a tech stack and learn as much as you can about that group of technologies. It will make you more valuable than being a jack of all trades."
+    },
+    {
+      "id": 7,
+      "title": "9 Reasons People Hate JavaScript",
+      "category": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAg2n68y5tSKqRK_tw4ioZHQGT7zi1Piutng&s",
+      "link": "https://www.youtube.com/embed/J-graiyPhpw",
+      "description": "Why does everyone HATE JavaScript? We expose its flaws, quirks, and why it's still the king of the web!"
+    },
+    {
+      "id": 8,
+      "title": "Roadmap for Learning SQL",
+      "category": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQW7buK37ELOh52nKLUYmacUMKKDLglEYEyw&s",
+      "link": "https://www.youtube.com/embed/yMqldbY2AAg",
+      "description": "A full explanation of how to become a sql developer in 2024, following standardized  frameworks and the most recent practices incorporated by the more influences companies."
+    },
+    {
+      "id": 9,
+      "title": "Scale for Beginners. Start Here.",
+      "category": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-6vE2Yk3-RSQihgDeJbc4jMVM-MJzS591g&s",
+      "link": "https://www.youtube.com/embed/i4zGDoRvn5o",
+      "description": "The C Major Scale in Open Position is a terrific first scale on the guitar! It helps you develop finger dexterity and pick control and is a useful tool for improvising!"
+    },
+    {
+      "id": 10,
+      "title": "Red Hot Chili Peppers 'Californication' Guitar Lesson",
+      "category": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4MSM1VzNlbd38PW3urupdNfVs6hlNmugMMQ&s",
+      "link": "https://www.youtube.com/embed/ryGJpnT98-E",
+      "description": "The C Major Scale in Open Position is a terrific first scale on the guitar! It helps you develop finger dexterity and pick control and is a useful tool for improvising!"
+    },
+    {
+      "id": 11,
+      "title": "Get FASTER Fingers In 1 WEEK - #1 Finger Exercise for Guitar",
+      "category": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHqZg-FZZF_0KhHMzB__bgtUnb0WOIVi6EyA&s",
+      "link": "https://www.youtube.com/embed/sf-RI1YPvqY",
+      "description": "When it comes to finger exercises for guitar, most people think of the typical spider exercise, but I'm going to show you a SPECIAL exercise that focus on the real problems - your tendons and tension. I GUARANTEE that if you do this exercise for only 1 week, you will see much faster chord changes and scales. But you do not want to overdo this exercise. A little goes a long way."
+    },
+    {
+      "id": 12,
+      "title": "CHOPIN - NOCTURNO OP.9 NO.2 (PIANO TUTORIAL LECCION) (COMPLETA)",
+      "category": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBL6Und6NCzwRpYDdFGpEaNegybtymb9iSA&s",
+      "link": "https://www.youtube.com/embed/TUIZycSwY9Q",
+      "description": "Lección de piano paso a paso completa sobre cómo tocar Nocturno Op 9 No 2 en mi bemol mayor de Federico Chopin. (Guía completa - Tutorial de práctica de piano con ejercicios de velocidad y precisión) - Todas las partes gratis"
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "title": "LANGUAGES",
+      "color": "#6BD1FF"
+    },
+    {
+      "id": 1,
+      "title": "SOFTWARE DEVELOPMENT",
+      "color": "#00C86F"
+    },
+    {
+      "id": 2,
+      "title": "MUSIC",
+      "color": "#B160C5  "
+    }
+  ]
 }

@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -58,13 +59,13 @@ const Container = styled.div`
     }
 `
 
-const InputText = ({ label, placeholder, border, height, error }) => {
+const InputText = forwardRef(( props, ref ) => {
     return (
-        <Container $border={border} $height={height} $error={error}>
-            <label htmlFor={`input-${label}`}>{label}</label>
-            <textarea type='text' name="input" id={`input-${label}`} placeholder={placeholder} required/>
+        <Container $border={props.border} $height={props.height} $error={props.error}>
+            <label htmlFor={`input-${props.label}`}>{props.label}</label>
+            <textarea ref={ref} type='text' name="input" id={`input-${props.label}`} placeholder={props.placeholder} required />
         </Container>
     )
-}
+})
 
 export default InputText

@@ -12,6 +12,8 @@ const reducers = (state, action) => {
     switch (action.type) {
         case 'SET_VIDEOS':
             return { ...state, videos: action.payload, selectedVideo: { ...action.payload[0] } }
+        case 'UPDATE_VIDEOS':
+            return { ...state, videos: action.payload }
         case 'SET_CATEGORIES':
             return {
                 ...state,
@@ -19,7 +21,7 @@ const reducers = (state, action) => {
                 selectedVideo: { ...state.selectedVideo, color: action.payload[0].color, category: action.payload[0].title }
             }
         case 'SET_SELECTED_VIDEO':
-            return { ...state, selectedVideo: { ...action.payload, color: state.categories[action.payload.categorie].color, category: state.categories[action.payload.categorie].title } }
+            return { ...state, selectedVideo: { ...action.payload, color: state.categories[action.payload.category].color, category: state.categories[action.payload.category].title } }
         default:
             return state;
     }

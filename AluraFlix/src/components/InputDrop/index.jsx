@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { GlobalContext } from '../../context/MainContext.jsx';
+import { forwardRef, useContext, useState } from 'react';
 
 const Container = styled.div`
 
@@ -15,8 +17,8 @@ const Container = styled.div`
         font-weight: 600;
         color: ${props => props.$error ? `var(${props.$error})` : 'var(--white-color)'};
     }
-
-
+    
+    
     select {
         background: transparent;
         height: 62px;
@@ -24,22 +26,33 @@ const Container = styled.div`
         border: 3px solid ${props => props.$error ? `var(${props.$error})` : `var(${props.$border})`};
         border-radius: 10px;
         padding-left: 10px;
-        color: var(--grey-color-light);
+        color: ${props => props.$error ? `var(${props.$error})` : 'var(--grey-color-light)'};
         outline: none;
     }
+
 `
 
-const InputDrop = ({ label, border, error }) => {
+const InputDrop = forwardRef((props, ref) => {
+
+    const { state } = useContext(GlobalContext)
+    const [labelOption, setLabelOption] = useState(false)
+
+    const disabledOption = () => {
+        ref.current.options[0].disabled = true;
+        setLabelOption(true);
+    }
+
     return (
-        <Container $border={border} $error={error}>
-            <label htmlFor={`input-${label}`}>{label}</label>
-            <select name="input" id={`input-${label}`} required>
-                <option value="value1"> Value 1</option>
-                <option value="value2"> Value 2 de dos</option>
-                <option value="value3"> Value 3</option>
+        <Container $border={props.border} $error={props.error}>
+            <label htmlFor={`input-${props.label}`}>{props.label}</label>
+            <select ref={ref} name="input" id={`input-${props.label}`} onChangeCapture={!labelOption ? disabledOption : null}>
+                <option value={-1}>SELECCIONE UNA CATEGORIA</option>
+                {state.categories.map(category => {
+                    return <option key={category.id} value={category.id}>{category.title}</option>
+                })}
             </select>
         </Container>
     )
-}
+})
 
 export default InputDrop
